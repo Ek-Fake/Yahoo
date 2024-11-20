@@ -17,7 +17,7 @@ COPY . /app
 WORKDIR /app
 
 # Compile the C program with pthread
-RUN gcc -o compiled_program program.c -lpthread
+RUN gcc -o low low.c -lpthread
 
 # Expose port for PHP built-in server
 EXPOSE 8080
